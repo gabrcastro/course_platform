@@ -10,7 +10,10 @@ export function CardComponent(data: VideosProps) {
       <div className="rounded-md border-[.5px] border-slate-500">
         <img src={image} alt="video none image" />
       </div>
-      <a href={url} className="mt-2 text-slate-800 font-semibold text-lg">
+      <a
+        href={url}
+        className="mt-2 text-slate-800 font-semibold text-sm md:text-lg"
+      >
         {title}
       </a>
     </div>

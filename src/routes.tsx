@@ -3,6 +3,7 @@ import Layout from "./ui/layout";
 import { HomePage } from "./ui/pages/home.page";
 import LayoutPlay from "./ui/layout_play";
 import { VideoPage } from "./ui/pages/video.page";
+import { HistoryPage } from "./ui/pages/history.page";
 
 const routes: RouteObject[] = [
   {
@@ -10,7 +11,7 @@ const routes: RouteObject[] = [
     element: <Layout />, // Layout principal
     children: [
       { path: "", element: <HomePage /> },
-      { path: "/history", element: <HomePage /> },
+      { path: "/history", element: <HistoryPage /> },
     ],
   },
   {
